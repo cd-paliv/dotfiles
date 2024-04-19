@@ -1,0 +1,57 @@
+#!/bin/sh
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+alias zshrc='nvim ~/.config/zsh/'
+alias i3rc='nvim ~/.config/i3/config'
+alias i3statusrc='nvim ~/.config/i3status/config'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# easier to read disk
+alias df='df -h'     # human-readable sizes
+alias free='free -m' # show sizes in MB
+
+# get top process eating memory
+alias psmem='ps auxf | sort -nr -k 4 | head -5'
+
+# get top process eating cpu
+alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+
+# exa as ls
+alias ls="exa -l --icons"
+
+alias l='ls -a'
+alias ll='ls -la'
+
+# neovim
+alias vim="nvim"
+
+# zathura
+alias z="zathura"
+
+# neofetch
+alias btw="neofetch"
+
+# reboot to avoid watchdog
+alias reboot="/sbin/shutdown -r now"
+
+# update everything
+alias updateall="sudo apt autoclean && sudo apt autoremove -y && sudo apt update && sudo apt upgrade -y && sudo apt-get clean && sudo apt dist-upgrade -y"
+
+# tree
+alias tree="tree -C"
+
+# diff with colors
+alias diff="colordiff"
+
+# git
+alias gs="git status"
+alias gitsub="git submodule update --init --recursive"
+
+# project commands
+alias beam-mysql="docker exec -it beamdust-server_mysql-test_1 mysql -u example -p -D example"
+alias beam-psql="docker exec -it beamdust-server_postgres-test_1 psql -U example"
+alias wgup="sudo wg-quick up ~/Documentos/pvaccaro.conf"
+alias wgdown="sudo wg-quick down ~/Documentos/pvaccaro.conf"

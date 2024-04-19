@@ -1,0 +1,17 @@
+#!/bin/bash
+if [[ -f "$1" ]];
+then
+  file=$(basename -- "$1")
+  fullpath=$(realpath "$1")
+  if [[ "${file##*.}" == "pdf" ]];
+  then
+    pdftotext "$1" -
+  elif [ $(grep -rIL '' "$1" | wc -l) == 1 ] || [ "${file##*.}" == "svg" ];
+  then 
+    exiftool "$fullpath"
+  else
+    bat --style=numbers --color=always --line-range :500 "$1"
+  fi
+elif [[ -d "$1" ]]; then
+  tree -C -L 2 "$1" 
+fi 
