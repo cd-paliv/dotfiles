@@ -58,4 +58,5 @@ alias wgdown="sudo wg-quick down ~/Documentos/pvaccaro.conf"
 
 # IOT
 # contiki
-alias contiker='docker run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=$CNG_PATH,target=/home/user/contiki-ng -w /home/user/contiki-ng -it contiker/contiki-ng'
+alias contiker="xhost +'local:docker@' && docker run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=$CNG_PATH,destination=/home/user/contiki-ng -e DISPLAY=$DISPLAY -e LOCAL_UID=$(id -u $USER) -e LOCAL_GID=$(id -g $USER) -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -ti contiker/contiki-ng"
+
