@@ -55,3 +55,7 @@ alias beam-mysql="docker exec -it beamdust-server_mysql-test_1 mysql -u example 
 alias beam-psql="docker exec -it beamdust-server_postgres-test_1 psql -U example"
 alias wgup="sudo wg-quick up ~/Documentos/pvaccaro.conf"
 alias wgdown="sudo wg-quick down ~/Documentos/pvaccaro.conf"
+
+# IOT
+# contiki
+alias contiker='docker run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=$CNG_PATH,target=/home/user/contiki-ng -w /home/user/contiki-ng -it contiker/contiki-ng'
