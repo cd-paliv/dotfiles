@@ -38,7 +38,7 @@ alias btw="neofetch"
 alias reboot="/sbin/shutdown -r now"
 
 # update everything
-alias updateall="sudo apt autoclean && sudo apt autoremove -y && sudo apt update && sudo apt upgrade -y && sudo apt-get clean && sudo apt dist-upgrade -y"
+alias updateall="sudo apt update && sudo apt upgrade -y && sudo apt-get clean && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove"
 
 # tree
 alias tree="tree -C"
