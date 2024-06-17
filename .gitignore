@@ -18,6 +18,14 @@
 .xsession-errors
 .xsession-errors.old
 .zsh_history
+.arduino15/
+.config/gtk-2.0/
+.java/
+.jssc/
+.oracle_jre_usage/
+.python_history
+Arduino/
+arduino-1.8.19/
 Descargas/
 Documentos/
 
@@ -47,5 +55,6 @@ Documentos/
 .config/cinnamon-monitors.xml~
 .config/dconf/
 .config/nemo/
-.config/libreoffice
+.config/libreoffice/
+.config/flameshot/
 .linuxmint/
