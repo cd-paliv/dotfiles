@@ -32,6 +32,7 @@ Documentos/
 # Ignore specific files in .config folder
 .config/zsh/plugins/*
 .config/autostart
+.config/xviewer/
 .config/caja
 .config/cinnamon-monitors.xml
 .config/cinnamon-session
