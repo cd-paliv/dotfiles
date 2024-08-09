@@ -24,6 +24,7 @@
 .jssc/
 .oracle_jre_usage/
 .python_history
+.linuxmint/
 Arduino/
 arduino-1.8.19/
 Descargas/
@@ -58,4 +59,3 @@ Documentos/
 .config/nemo/
 .config/libreoffice/
 .config/flameshot/
-.linuxmint/
