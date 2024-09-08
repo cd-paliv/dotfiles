@@ -76,3 +76,5 @@ autoload edit-command-line; zle -N edit-command-line
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=('status' 'load' 'ram_joined' 'time')
 
+# Initialize rbenv - Ruby Version Manager
+eval "$(rbenv init - zsh)"
