@@ -1,1 +1,3 @@
-/home/paliv/.config/zsh/.zshrc
+# Source the main zsh configuration from ~/.config/zsh/zshrc
+source $HOME/.config/zsh/zshrc
+

@@ -1,3 +1,6 @@
 [user]
 	email = paulavaccaro1@gmail.com
 	name = Paula Vaccaro
+	username = cd-paliv
+[credential]
+	helper = store
