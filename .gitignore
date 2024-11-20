@@ -2,6 +2,7 @@
 .bash_history
 .bash_logout
 .bashrc
+.bundle/
 .cache/
 .dmrc
 .dotnet/
@@ -24,6 +25,7 @@
 .jssc/
 .oracle_jre_usage/
 .python_history
+.rbenv/
 .linuxmint/
 .landscape/
 .motd_shown/
