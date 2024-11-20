@@ -1,0 +1,2 @@
+---
+1.0.0 rubocop:>= 0,rubocop-minitest:>= 0,rubocop-performance:>= 0,rubocop-rails:>= 0|checksum:26635821283d6a03dc8b68172123716a62db96123eb035f736ebb91283f96418
