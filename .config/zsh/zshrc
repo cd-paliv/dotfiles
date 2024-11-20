@@ -16,14 +16,15 @@ stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
 # beeping is annoying
-unsetopt BEEP
+# unsetopt BEEP
 
 # completions
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 # zstyle ':completion::complete:lsof:*' menu yes select
-zmodload zsh/complist
+# zmodload zsh/complist
 # compinit
+compinit
 _comp_options+=(globdots)		# Include hidden files.
 
 autoload -U up-line-or-beginning-search
@@ -50,7 +51,7 @@ zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "hlissner/zsh-autopair"
 
 # Key-bindings
-bindkey -s '^o' 'op^M'
+bindkey -s '^o' 'op'
 bindkey '^[[P' delete-char
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line

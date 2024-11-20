@@ -3,11 +3,15 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # Use vim keys in tab complete menu:
-bindkey -M menuselect '^h' vi-backward-char
-bindkey -M menuselect '^k' vi-up-line-or-history
-bindkey -M menuselect '^l' vi-forward-char
-bindkey -M menuselect '^j' vi-down-line-or-history
-bindkey -M menuselect '^[[Z' vi-up-line-or-history
+# Apply only in vi mode, so as to avoid conflicts with other widgets
+if [[ -n "$ZSH_VERSION" ]]; then
+    bindkey -M viins '^h' vi-backward-char
+    bindkey -M viins '^j' vi-down-line-or-history
+    bindkey -M viins '^k' vi-up-line-or-history
+    bindkey -M viins '^l' vi-forward-char
+    bindkey -M viins '^[Z' vi-up-line-or-history
+fi
+
 bindkey -v '^?' backward-delete-char
 
 # Change cursor shape for different vi modes.

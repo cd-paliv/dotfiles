@@ -25,6 +25,15 @@
 .oracle_jre_usage/
 .python_history
 .linuxmint/
+.landscape/
+.motd_shown/
+.oh-my-zsh/
+.shell.pre-oh-my-zsh
+.viminfo
+.vscode-server
+.zcompdump*
+.zshrc.pre-oh-my-zsh
+.themes/
 Arduino/
 arduino-1.8.19/
 Descargas/
