@@ -43,3 +43,4 @@
 3.0.1 unicode-emoji:~> 4.0|checksum:bfee92b4200809d518ff15cdd48a9b1bc979820ff667b74bcd241b0d97c5b4d3,ruby:>= 2.5.0
 3.1.0 unicode-emoji:~> 4.0|checksum:cac07c67e6bee99586e24ac3271a3ae57ad05205d3f47cc5ad61e5143d940374,ruby:>= 2.5.0
 3.1.1 unicode-emoji:>= 4.0.4&~> 4.0|checksum:f5db383dd5e95cb4909346bf0500bc973cf83f70438ef7b3cffc7ed901a1052d,ruby:>= 2.5.0
+3.1.2 unicode-emoji:>= 4.0.4&~> 4.0|checksum:fdd4db6cf898201e341b21106663866dbd2a64d665c1a0a2fe8af09c6ef495d1,ruby:>= 2.5.0

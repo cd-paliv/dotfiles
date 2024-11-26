@@ -3,6 +3,7 @@
 .bash_logout
 .bashrc
 .bundle/
+.bundle/cache/compact_index/*
 .cache/
 .dmrc
 .dotnet/
@@ -42,6 +43,8 @@ Descargas/
 Documentos/
 
 # Ignore specific files in .config folder
+.config/QtProject.conf
+.config/gtk-3.0/
 .config/zsh/plugins/*
 .config/autostart
 .config/xviewer/
@@ -67,6 +70,7 @@ Documentos/
 .config/wiregui
 .config/cinnamon-monitors.xml~
 .config/dconf/
+.config/xed/
 .config/nemo/
 .config/libreoffice/
 .config/flameshot/

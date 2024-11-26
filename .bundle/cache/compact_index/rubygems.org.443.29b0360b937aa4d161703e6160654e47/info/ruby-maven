@@ -42,3 +42,4 @@
 3.3.12 ruby-maven-libs:~> 3.3.9|checksum:7241167c620c040a1686a3d4c6f67bc2ae803e8d97d56f7d6c55e6ef183a00ce
 3.3.13 ruby-maven-libs:~> 3.3.9|checksum:5831655998c29a211ea28ece93a6b3a5074a477a29a3a6a673a9eaa29a392133
 3.9.0.pre1 ruby-maven-libs:~> 3.9.9|checksum:a56dc4c5ed94117706f9d617f93a8dec511367583dcb76786e6947d4fb08d6c2,rubygems:> 1.3.1
+3.9.2 ruby-maven-libs:~> 3.9.9|checksum:7be503b61d05a42d9cfd5fff840e03c6650b21d394cfa6d9167ad3706554eded
